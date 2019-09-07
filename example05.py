@@ -3,6 +3,7 @@ import turtle
 example = turtle.Turtle()
 example.color("cyan")
 example.speed(100)
+turtle.bgcolor("black")
 
 
 def draw_square(length):

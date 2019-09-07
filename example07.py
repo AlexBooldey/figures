@@ -3,6 +3,7 @@ import turtle
 example = turtle.Turtle()
 example.color("cyan")
 example.speed(100)
+turtle.bgcolor("black")
 
 for side in range(19):
     example.forward(10 * side)

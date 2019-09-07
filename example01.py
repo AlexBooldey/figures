@@ -1,8 +1,9 @@
 import turtle
 
 example = turtle.Turtle()
-example.color("misty rose")
+example.color("cyan")
 example.speed(100)
+turtle.bgcolor("black")
 
 
 def draw_square():
@@ -23,3 +24,4 @@ for square in range(80):
     example.forward(5)
     example.left(5)
 example.hideturtle()
+turtle.done()

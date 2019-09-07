@@ -6,6 +6,7 @@ squares = int(num_str)
 
 angle = 180 - 180 * (squares - 2) / squares
 example = turtle.Turtle()
+turtle.bgcolor("black")
 
 x = 0
 y = 0

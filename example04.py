@@ -12,5 +12,6 @@ def spiral(sides, trun, color, width):
         example.right(trun)
 
 
+turtle.bgcolor("black")
 spiral(150, 45, "cyan", 5)
 turtle.done()

@@ -3,8 +3,9 @@ import turtle
 example = turtle.Turtle()
 example.color("cyan")
 example.speed(100)
+turtle.bgcolor("black")
 
-colors = ["green", "black", "orange", "navy", "lightblue", "purple", "#D3F122", "lightblue"]
+colors = ["green", "white", "orange", "navy", "lightblue", "purple", "#D3F122", "lightblue"]
 
 
 def draw_square():

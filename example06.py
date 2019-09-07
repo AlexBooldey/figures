@@ -20,5 +20,6 @@ def spiral(sides, trun, color, width):
         example.hideturtle()
 
 
+turtle.bgcolor("black")
 spiral(150, 45, "cyan", 5)
 turtle.done()
