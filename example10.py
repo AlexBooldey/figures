@@ -1,11 +1,28 @@
+import random
 import turtle
 
-colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
-example = turtle.Pen()
-turtle.bgcolor('black')
-
-for x in range(360):
-    example.pencolor(colors[x % 6])
-    example.width(x / 100 + 1)
-    example.forward(x)
-    example.left(59)
+# Draws a burst of straight rays, uses a nested loop to make small
+# scribbles at the end of each ray
+turtle.tracer(0, 0)
+wn = turtle.Screen()
+wn.colormode(255)
+turtle.bgcolor("black")
+alex = turtle.Turtle()
+alex.speed(10)
+alex.goto(0, 0)
+alex.pensize(0)
+alex.ht()
+for i in range(400):
+    alex.color(random.randrange(256), random.randrange(256), random.randrange(256))
+    alex.goto(round(random.gauss(0, 100), 0), round(random.gauss(0, 100), 0))
+    x = alex.xcor()
+    y = alex.ycor()
+    for j in range(25):
+        s = round(random.gauss(0, 5), 0)
+        t = round(random.gauss(0, 5), 0)
+        alex.color(random.randrange(256), random.randrange(256), random.randrange(256))
+        alex.pensize(0)
+        alex.goto(x + s, y + t)
+    alex.goto(s, t)
+turtle.update()
+wn.exitonclick()
